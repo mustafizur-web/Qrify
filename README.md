@@ -21,12 +21,31 @@
 **Scan. Generate. Organize.** Qrify is a fast, privacy-first QR code toolkit for Android — scan any code with real-time detection, generate custom QR codes for links, Wi-Fi, contacts and more, and keep a searchable history of everything you've scanned.
 
 [Features](#-features) •
+[Demo](#-demo) •
 [Screenshots](#-screenshots) •
 [Tech Stack](#-tech-stack) •
 [Getting Started](#-getting-started) •
 [Architecture](#-project-architecture) •
 [Roadmap](#-roadmap) •
 [Contributing](#-contributing)
+
+</div>
+
+---
+
+## 🎬 Demo
+
+<div align="center">
+
+### 📥 Try Qrify Now
+
+<a href="https://drive.google.com/file/d/1j6Jnp9CjR54zPrdZJwpG1J7EYmN-Se-S/view?usp=drive_link">
+  <img src="https://img.shields.io/badge/Download-Qrify%20APK-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Download Qrify"/>
+</a>
+
+**[👉 Click here to view / download Qrify](https://drive.google.com/file/d/1j6Jnp9CjR54zPrdZJwpG1J7EYmN-Se-S/view?usp=drive_link)**
+
+<sub>Hosted on Google Drive — tap the link above to preview or download the app.</sub>
 
 </div>
 
