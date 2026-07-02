@@ -1,209 +1,256 @@
-# 📱 Qrify
-
 <div align="center">
 
-### ⚡ Fast • Minimal • Modern QR Code Scanner & Generator
+# 📱 Qrify
 
-A beautiful Android QR Code Scanner & Generator built with **Kotlin**, **Jetpack Compose**, **CameraX**, and **Material 3**.
+### A modern, native Android QR code scanner & generator — built with Jetpack Compose
 
----
+<p>
+  <img src="https://img.shields.io/badge/Kotlin-100%25-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"/>
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-UI-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose"/>
+  <img src="https://img.shields.io/badge/Min%20SDK-24-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Min SDK 24"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"/>
+</p>
+
+<p>
+  <img src="https://img.shields.io/github/stars/mustafizur-web/Qrify?style=social" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/mustafizur-web/Qrify?style=social" alt="Forks"/>
+  <img src="https://img.shields.io/github/issues/mustafizur-web/Qrify" alt="Issues"/>
+  <img src="https://img.shields.io/github/last-commit/mustafizur-web/Qrify" alt="Last Commit"/>
+</p>
+
+**Scan. Generate. Organize.** Qrify is a fast, privacy-first QR code toolkit for Android — scan any code with real-time detection, generate custom QR codes for links, Wi-Fi, contacts and more, and keep a searchable history of everything you've scanned.
+
+[Features](#-features) •
+[Screenshots](#-screenshots) •
+[Tech Stack](#-tech-stack) •
+[Getting Started](#-getting-started) •
+[Architecture](#-project-architecture) •
+[Roadmap](#-roadmap) •
+[Contributing](#-contributing)
 
 </div>
 
+---
+
 ## ✨ Features
 
-### 📷 QR Code Scanner
-- Fast real-time QR code scanning
-- CameraX powered scanner
-- Automatic QR detection
-- Smooth scanning animation
-- Flashlight support (if available)
-- Vibration feedback
-- Instant scan result
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 🔗 Smart QR Detection
-Automatically detects different QR content including:
+### 🔍 Smart Scanner
+- Real-time QR/barcode detection powered by **ML Kit**
+- Live camera preview with **CameraX**
+- Flashlight toggle for low-light scanning
+- Import & scan QR codes directly from your gallery
+- Haptic feedback on successful scan
 
-- 🌐 Website URLs
-- 📧 Email
-- 📞 Phone Numbers
-- 💬 SMS
-- 📍 Location
-- 📶 WiFi
-- 📝 Plain Text
+</td>
+<td width="50%" valign="top">
 
-### 🛡 URL Safety Check
-- Detects suspicious URLs
-- Warning dialog before opening unsafe links
-- Safe browsing experience
+### 🎨 QR Generator
+- Create QR codes for **Links, Text, Wi-Fi, Contacts, Email, SMS & Phone numbers**
+- Instant live preview as you type
+- Save generated codes straight to your gallery
+- One-tap sharing to any app
 
-### ⚡ Quick Actions
-Depending on QR content users can:
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-- Open Website
-- Copy Text
-- Share Content
-- Call Phone Number
-- Send SMS
-- Send Email
-- Open Location
-- Connect to WiFi (where supported)
+### 🛡️ Built-in URL Safety
+- On-device heuristic risk analysis for scanned links
+- Flags shortened URLs and suspicious top-level domains
+- Warns before opening potentially unsafe links
+- Optional auto-open for verified safe HTTPS links
 
-### 📝 Scan History
-- Save scan history automatically
-- View previous scans
-- Delete individual history
-- Clear all history
-- History stored locally
+</td>
+<td width="50%" valign="top">
 
-### 🎨 QR Code Generator
-Generate QR Codes for:
+### 🗂️ Scan History
+- Automatically saves every scan, searchable and organized
+- Smart content-type detection: URLs, Wi-Fi, contacts, calendar events, geo-locations, deep links & more
+- One tap to re-open, copy, or delete past scans
+- Contextual quick actions (Call, Email, Connect to Wi-Fi, Save Contact, Open in Maps, Add to Calendar...)
 
-- Text
-- Website URL
-- Email
-- Phone Number
-- SMS
-- WiFi
-- Location
+</td>
+</tr>
+</table>
 
-### ⚙ Settings
-- Customize app behavior
-- Manage history
-- Simple and clean settings page
-
-### 🎨 Modern UI
-- Material 3 Design
-- Jetpack Compose UI
-- Minimal interface
-- Smooth animations
-- Responsive layout
+### 🎛️ Plus:
+- 🌙 **Dark theme** support with full Material 3 theming
+- ⚙️ **Customizable settings** — haptics, auto-open links, appearance
+- 🧩 **Deep link routing** — the app intelligently routes parsed content to the right system action
 
 ---
 
-# 📸 Screens
+## 📸 Screenshots
 
-- Scanner
-- Result Bottom Sheet
-- Generator
-- History
-- Settings
+<div align="center">
+<i>Add your app screenshots here to showcase the Scanner, Generator, History, and Settings screens.</i>
 
-> *(You can add screenshots here later.)*
-
----
-
-# 🛠 Built With
-
-- Kotlin
-- Jetpack Compose
-- Material 3
-- CameraX
-- Navigation Compose
-- ViewModel
-- Android Architecture Components
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/scanner.png" width="200" alt="Scanner Screen"/><br/><sub>Scanner</sub></td>
+    <td align="center"><img src="docs/screenshots/generator.png" width="200" alt="Generator Screen"/><br/><sub>Generator</sub></td>
+    <td align="center"><img src="docs/screenshots/history.png" width="200" alt="History Screen"/><br/><sub>History</sub></td>
+    <td align="center"><img src="docs/screenshots/settings.png" width="200" alt="Settings Screen"/><br/><sub>Settings</sub></td>
+  </tr>
+</table>
+</div>
 
 ---
 
-# 📂 Project Structure
+## 🛠️ Tech Stack
+
+| Category | Technology |
+|---|---|
+| **Language** | [Kotlin](https://kotlinlang.org/) |
+| **UI Toolkit** | [Jetpack Compose](https://developer.android.com/jetpack/compose) + Material 3 |
+| **Architecture** | MVVM (ViewModel + StateFlow), Repository pattern |
+| **Camera** | [CameraX](https://developer.android.com/training/camerax) |
+| **QR/Barcode Detection** | [ML Kit Barcode Scanning](https://developers.google.com/ml-kit/vision/barcode-scanning) |
+| **QR Generation** | [ZXing](https://github.com/zxing/zxing) |
+| **Navigation** | Jetpack Navigation Compose |
+| **Local Storage** | Jetpack DataStore (Preferences) |
+| **Serialization** | Gson |
+| **Async** | Kotlin Coroutines & Flow |
+| **Testing** | JUnit, Espresso, Compose UI Test |
+
+---
+
+## 🏗 Project Architecture
+
+Qrify follows a clean, layered **MVVM** architecture that separates UI, domain logic, and data:
 
 ```
-app/
- ├── data/
- ├── domain/
- ├── scanner/
- ├── ui/
- │    ├── scanner/
- │    ├── generator/
- │    ├── history/
- │    ├── settings/
- │    └── result/
- └── MainActivity.kt
+app/src/main/java/com/example/qrify/
+├── ui/
+│   ├── scanner/        → Camera preview, live QR detection screen
+│   ├── generator/       → QR code creation screen
+│   ├── history/         → Scan history list & search
+│   ├── settings/        → App preferences
+│   ├── result/          → Bottom sheet showing parsed scan results
+│   ├── components/      → Reusable Compose UI components
+│   ├── navigation/       → App-wide navigation graph
+│   └── theme/            → Material 3 theming (color, typography)
+│
+├── domain/
+│   ├── parser/          → Parses raw QR payloads into structured content
+│   ├── generator/       → Builds QR bitmaps from user input
+│   ├── safety/          → On-device URL risk analysis
+│   ├── action/           → Routes parsed content to system actions (call, email, maps, etc.)
+│   └── model/            → Domain models (ContentType, ParsedQrContent, UrlSafetyResult...)
+│
+├── data/
+│   ├── local/            → Local persistence (scan history store & entities)
+│   └── repository/       → Settings & scan history repositories
+│
+├── scanner/              → ML Kit barcode analyzer
+├── AppContainer.kt       → Lightweight manual dependency container
+└── MainActivity.kt       → Single-activity entry point
 ```
+
+This structure keeps scanning, generation, safety-checking, and persistence fully decoupled — making the codebase easy to test, extend, and maintain.
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Clone
+### Prerequisites
+
+- [Android Studio](https://developer.android.com/studio) (latest stable release recommended)
+- JDK 11+
+- An Android device or emulator running **API 24 (Android 7.0)** or higher
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mustafizur-web/Qrify.git
+   cd Qrify
+   ```
+
+2. **Open in Android Studio**
+   Open the project folder and let Gradle sync automatically.
+
+3. **Run the app**
+   Select a device/emulator and hit ▶️ Run — or from the command line:
+   ```bash
+   ./gradlew installDebug
+   ```
+
+4. **Grant camera permission**
+   On first launch, allow camera access so Qrify can start scanning.
+
+### Building a release APK
 
 ```bash
-git clone https://github.com/yourusername/Qrify.git
+./gradlew assembleRelease
 ```
 
-## Open
+---
 
-Open the project using **Android Studio**.
+## 🔐 Permissions
 
-## Build
+| Permission | Purpose |
+|---|---|
+| `CAMERA` | Required to scan QR codes in real time |
+| `VIBRATE` | Provides haptic feedback on successful scans |
+| `INTERNET` | Reserved for future safety/verification features |
 
-Sync Gradle and run the project on:
-
-- Android Emulator
-- Physical Android Device
+Qrify does **not** collect or transmit personal data. All scan history and settings are stored locally on-device.
 
 ---
 
-# 📋 Requirements
+## 🗺 Roadmap
 
-- Android Studio (Latest Version Recommended)
-- Android SDK
-- Kotlin
-- Gradle
-
----
-
-# 🔒 Permissions
-
-The app requires:
-
-- Camera
-- Internet
-- Vibration
+- [ ] Google Safe Browsing API integration for enhanced URL safety checks
+- [ ] Cloud backup & sync for scan history
+- [ ] Batch QR generation & export
+- [ ] Custom QR styling (colors, logos, frames)
+- [ ] Widget support for quick scanning
+- [ ] Wear OS companion app
 
 ---
 
-# 💡 Future Improvements
+## 🤝 Contributing
 
-- Barcode Support
-- Dark Mode Toggle
-- Export Scan History
-- Favorites
-- QR Customization
-- Batch Scanning
-- Cloud Backup
-- Multiple Themes
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
+Contributions are welcome and appreciated! To contribute:
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push the branch
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
----
-
-# ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
-
-It helps a lot!
+Please make sure your code follows the existing style and includes tests where applicable.
 
 ---
 
-# 📄 License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Author
+
+**Mustafizur Rahman**
+
+<p>
+  <a href="https://github.com/mustafizur-web">
+    <img src="https://img.shields.io/badge/GitHub-mustafizur--web-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
 
 ---
 
 <div align="center">
 
-Made with ❤️ using Kotlin & Jetpack Compose
+### ⭐ If you find Qrify useful, consider giving it a star on GitHub!
+
+<sub>Built with ❤️ using Kotlin & Jetpack Compose</sub>
 
 </div>
