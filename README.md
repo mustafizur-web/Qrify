@@ -12,6 +12,11 @@
 </p>
 
 <p>
+  <img src="https://img.shields.io/badge/100%25-Ad--Free-success?style=for-the-badge&logo=adblock&logoColor=white" alt="Ad-Free"/>
+  <img src="https://img.shields.io/badge/No%20Trackers-Privacy%20First-informational?style=for-the-badge&logo=shield&logoColor=white" alt="No Trackers"/>
+</p>
+
+<p>
   <img src="https://img.shields.io/github/stars/mustafizur-web/Qrify?style=social" alt="Stars"/>
   <img src="https://img.shields.io/github/forks/mustafizur-web/Qrify?style=social" alt="Forks"/>
   <img src="https://img.shields.io/github/issues/mustafizur-web/Qrify" alt="Issues"/>
@@ -19,6 +24,8 @@
 </p>
 
 **Scan. Generate. Organize.** Qrify is a fast, privacy-first QR code toolkit for Android — scan any code with real-time detection, generate custom QR codes for links, Wi-Fi, contacts and more, and keep a searchable history of everything you've scanned.
+
+> 🚫 **100% Ad-Free.** No banner ads, no interstitials, no promotional pop-ups, and no third-party promotion of any kind — ever.
 
 [Features](#-features) •
 [Demo](#-demo) •
@@ -92,6 +99,25 @@
 - Smart content-type detection: URLs, Wi-Fi, contacts, calendar events, geo-locations, deep links & more
 - One tap to re-open, copy, or delete past scans
 - Contextual quick actions (Call, Email, Connect to Wi-Fi, Save Contact, Open in Maps, Add to Calendar...)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🚫 Ad-Free by Design
+- **Zero ads** — no banners, no interstitials, no video ads
+- **Zero promotions** — no sponsored content, no third-party product placement
+- No paywalls or "premium unlock" nags
+- A clean, distraction-free experience from first launch to last
+
+</td>
+<td width="50%" valign="top">
+
+### 🔒 Privacy First
+- No analytics SDKs, no ad networks, no data harvesting
+- All scans and settings stay **on your device**
+- Nothing is uploaded, shared, or sold — ever
 
 </td>
 </tr>
@@ -221,6 +247,8 @@ This structure keeps scanning, generation, safety-checking, and persistence full
 
 Qrify does **not** collect or transmit personal data. All scan history and settings are stored locally on-device.
 
+> 💯 **No ads. No promotions. No trackers.** Qrify contains zero ad SDKs and zero analytics/tracking libraries — the `INTERNET` permission is reserved solely for potential future safety-verification features (e.g. Google Safe Browsing lookups), not for ads or telemetry.
+
 ---
 
 ## 🗺 Roadmap
@@ -270,6 +298,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ### ⭐ If you find Qrify useful, consider giving it a star on GitHub!
 
-<sub>Built with ❤️ using Kotlin & Jetpack Compose</sub>
+<sub>Built with ❤️ using Kotlin & Jetpack Compose — 100% Ad-Free, Always.</sub>
 
 </div>
